@@ -13,8 +13,8 @@ const Services = () => {
            <Cards title='say some th' imageUrl='https://static01.nyt.com/images/2017/09/11/smarter-living/dining-tables-slide-0XQB/dining-tables-slide-0XQB-jumbo.jpg' body='frfgfgsdfg'/>
            
          </div>
-         <div className='justify-end'>
-           <button className="btn btn-primary">Show more</button>
+         <div className='w-full'>
+           <button className="mx-auto btn btn-primary">Show more</button>
         </div>
    </div>
       
