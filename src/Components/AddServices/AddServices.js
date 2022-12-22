@@ -2,26 +2,25 @@ import React from 'react';
 
 const AddServices = () => {
     return (
-        <div>
-            <h1>AddServices</h1>
-        <form className='bg-slate-400'>
-        <div className="card w-96 bg-base-100 shadow-xl login mx-auto">
-          <label className='mx-auto text-2xl'>Login</label>
+        <div className='my-20'>
+        <form >
+        <div className="card w-96 bg-base-200 shadow-xl login mx-auto">
+          <label className='mx-auto mt-20 text-2xl'>AddServices</label>
                <div className="card-body">
                <div className="form-control">
                 <label className="label">
-                  Email
+                  Title
                 </label>
-                   <input type="text" placeholder="Email" className="input w-full max-w-xs mb-8" />
+                   <input type="text" placeholder="Title" className="input w-full max-w-xs mb-8" />
                 <label className="label">
-                 Password
+                 discription
                 </label>
-                  <input type="Password" placeholder="Password" className="input w-full max-w-xs mb-8" /> 
+                   <textarea className="textarea" placeholder="discription"></textarea>
                 </div>
                   <div className="card-actions justify-end">
-                     <button className="btn btn-primary">Login</button>
+                  <input type="file" className="file-input file-input-bordered w-full max-w-xs" />
                  </div>
-                 <a className='mx-auto' href='/register'>Create an account</a>
+                 <button className="btn btn-primary">Add</button>
                </div>
         </div> 
      </form>

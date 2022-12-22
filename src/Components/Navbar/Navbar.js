@@ -6,6 +6,7 @@ const navItems = <>
 <li><NavLink className={({ isActive }) => (isActive ? 'text-secondary-content' : '')} to='/services'>Services</NavLink></li>
 <li><NavLink className={({ isActive }) => (isActive ? 'text-secondary-content' : '')} to='/banner'>Banner</NavLink></li>
 <li><NavLink className={({ isActive }) => (isActive ? 'text-secondary-content' : '')} to='/login'>Login</NavLink></li>
+<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary-content' : '')} to='/addservices'>AddServices</NavLink></li>
 </>
 
 
@@ -34,3 +35,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

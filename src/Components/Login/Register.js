@@ -2,9 +2,9 @@ import React from 'react';
 
 const Register = () => {
     return (
-        <body className='bg-slate-400'>
-        <div className="card w-96 bg-base-100 shadow-xl login mx-auto">
-          <label className='mx-auto text-2xl'>Register</label>
+        <body className='my-20'>
+        <div className="card w-96 bg-base-200 shadow-xl login mx-auto">
+          <label className='mx-auto mt-20 text-2xl'>Register</label>
                <div className="card-body">
                <div className="form-control">
                 <label className="label">
