@@ -28,7 +28,7 @@ function Cards({ services, service, setService }) {
           <figure><img className='Card-design rounded-lg' src={service.image} alt="Shoes" /></figure>
           <h2 className="card-title text-3xl text-primary mt-3">{service.title}</h2>
           <h4 className="card-title">Price: <span className='font-bold text-yellow-500'>${service.price}</span></h4>
-          <p>{service.description.length > 50 ? service.description.slice(0, 50) + '...' : service.description}</p>
+          <p>{service.description.length > 40 ? service.description.slice(0, 40) + '...' : service.description}</p>
           {
             user &&
             <div className="card-actions justify-end">
