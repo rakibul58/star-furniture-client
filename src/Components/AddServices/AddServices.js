@@ -1,14 +1,18 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const AddServices = () => {
   const { register, handleSubmit, reset } = useForm();
 
   const imageHostKey = process.env.REACT_APP_imgbb_key;
 
+  const navigate = useNavigate();
+
 
   const handleSubmitPhone = data => {
+
 
     console.log(data);
 
@@ -41,6 +45,7 @@ const AddServices = () => {
             .then(res => res.json())
             .then(data => {
               toast.success("Service added Successfully");
+              navigate('/services');
               reset();
             })
         }
