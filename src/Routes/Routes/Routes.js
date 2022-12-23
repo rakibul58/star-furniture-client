@@ -40,7 +40,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/addservices',
-                element: <AddServices/>
+                element: <AddServices></AddServices>
             },
         ]
     }
