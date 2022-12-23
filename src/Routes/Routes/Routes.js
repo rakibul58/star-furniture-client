@@ -3,7 +3,9 @@ import { createBrowserRouter } from 'react-router-dom';
 import AddServices from '../../Components/AddServices/AddServices';
 import Contact from '../../Components/Contact/Contact';
 import Banner from '../../Components/Home/Banner';
+import FAQ from '../../Components/Home/FAQ';
 import Home from '../../Components/Home/Home';
+import Info from '../../Components/Home/Info';
 import Login from '../../Components/Login/Login';
 import Register from '../../Components/Login/Register';
 import Services from '../../Components/services/services';
@@ -41,6 +43,14 @@ const routes = createBrowserRouter([
             {
                 path: '/addservices',
                 element: <AddServices></AddServices>
+            },
+            {
+                path: '/info',
+                element: <Info></Info>
+            },
+            {
+                path: '/faq',
+                element: <FAQ></FAQ>
             },
         ]
     }

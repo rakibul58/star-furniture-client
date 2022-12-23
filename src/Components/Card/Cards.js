@@ -10,9 +10,9 @@ function Cards({service}) {
           <h2 className="card-title text-3xl text-primary mt-3">{service.title}</h2>
           <h4 className="card-title">Price: <span className='font-bold text-yellow-500'>${service.price}</span></h4>
           <p>{service.description}</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Show details</button>
-            <button className="btn btn-primary">Buy Now</button>
+          <div className="card-actions justify-end mt-5">
+            <button className="btn btn-xs btn-error text-white hover:bg-opacity-70">Delete</button>
+            <button className="btn btn-xs btn-info text-white hover:bg-opacity-70">Update</button>
           </div>
         </div>
       </div>
