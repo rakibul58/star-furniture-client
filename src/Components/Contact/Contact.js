@@ -26,21 +26,21 @@ const Contact = () => {
                 <div className="flex flex-col justify-between">
                     <img src={contact} alt="" className="mx-auto rounded-xl" />
                 </div>
-                <form ref={form} onSubmit={sendEmail} noValidate="" className="space-y-6 ng-untouched ng-pristine ng-valid shadow-2xl p-10 rounded-xl bg-opacity-5 bg-slate-500">
+                <form ref={form} onSubmit={sendEmail} noValidate="" className="space-y-6 ng-untouched ng-pristine ng-valid shadow-2xl p-10 rounded-xl bg-base-300">
                     <h1 className='text-4xl font-bold text-secondary'>Contact Us</h1>
                     <div>
                         <label htmlFor="name" className="text-sm">Full name</label>
-                        <input name="user_name" id="name" type="text" placeholder="Name" className="w-full p-3 bg-black bg-opacity-5  border border-gray-600 mt-3 rounded-lg" />
+                        <input name="user_name" id="name" type="text" placeholder="Name" className="w-full input input-bordered mt-3" />
                     </div>
                     <div>
                         <label htmlFor="email" className="text-sm">Email</label>
-                        <input name="user_email" placeholder='Email' id="email" type="email" className="w-full p-3 bg-black bg-opacity-5 border border-gray-600 mt-3 rounded-lg" />
+                        <input name="user_email" placeholder='Email' id="email" type="email" className="w-full input input-bordered mt-3" />
                     </div>
                     <div>
                         <label htmlFor="message" className="text-sm">Message</label>
-                        <textarea name="message" placeholder='Message' id="message" rows="3" className="w-full p-3 bg-black bg-opacity-5 border border-gray-600 mt-3 rounded-lg"></textarea>
+                        <textarea name="message" placeholder='Message' id="message" rows="3" className="w-full textarea textarea-bordered mt-3"></textarea>
                     </div>
-                    <input type="submit" className="btn btn-primary rounded-lg" value='Send Message' />
+                    <input type="submit" className="btn btn-primary" value='Send Message' />
                 </form>
             </div>
         </div>

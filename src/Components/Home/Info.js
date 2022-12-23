@@ -2,10 +2,10 @@ import React from 'react';
 
 const Info = () => {
     return (
-        <section className="bg-gray-100 text-gray-800 mt-20 mb-44">
+        <section className="text-gray-800 mt-20 mb-44">
             <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
                 <div>
-                    <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-900">Aliquip definiebas ad est</h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-primary">Aliquip definiebas ad est</h2>
                     <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-600">Quando cetero his ne, eum admodum sapientem ut.</p>
                 </div>
                 <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
@@ -15,7 +15,7 @@ const Info = () => {
                         <div className="mt-12 space-y-12">
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 rounded-md bg-red-600 text-gray-50">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
@@ -28,7 +28,7 @@ const Info = () => {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 rounded-md bg-red-600 text-gray-50">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
@@ -41,7 +41,7 @@ const Info = () => {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 rounded-md bg-red-600 text-gray-50">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
@@ -66,7 +66,7 @@ const Info = () => {
                             <div className="mt-12 space-y-12">
                                 <div className="flex">
                                     <div className="flex-shrink-0">
-                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-red-600 text-gray-50">
+                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-gray-50">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
@@ -79,7 +79,7 @@ const Info = () => {
                                 </div>
                                 <div className="flex">
                                     <div className="flex-shrink-0">
-                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-red-600 text-gray-50">
+                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-gray-50">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
@@ -92,7 +92,7 @@ const Info = () => {
                                 </div>
                                 <div className="flex">
                                     <div className="flex-shrink-0">
-                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-red-600 text-gray-50">
+                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-gray-50">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                             </svg>

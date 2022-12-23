@@ -10,6 +10,7 @@ import Login from '../../Components/Login/Login';
 import Register from '../../Components/Login/Register';
 import Services from '../../Components/services/services';
 import Main from '../../layout/Main';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 const routes = createBrowserRouter([
     {
@@ -42,7 +43,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/addservices',
-                element: <AddServices></AddServices>
+                element: <PrivateRoute><AddServices></AddServices></PrivateRoute>
             },
             {
                 path: '/info',
