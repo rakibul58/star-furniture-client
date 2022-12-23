@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import AddServices from '../../Components/AddServices/AddServices';
+import UpdateModal from '../../Components/Card/UpdateModal';
 import Contact from '../../Components/Contact/Contact';
 import Banner from '../../Components/Home/Banner';
 import FAQ from '../../Components/Home/FAQ';
@@ -16,7 +17,7 @@ const routes = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
-        children:[
+        children: [
             {
                 path: '/',
                 element: <Home></Home>
@@ -31,19 +32,24 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/banner',
-                element: <Banner/>
+                element: <Banner />
             },
             {
                 path: '/login',
-                element: <Login/>
+                element: <Login />
             },
             {
                 path: '/register',
-                element: <Register/>
+                element: <Register />
             },
             {
                 path: '/addservices',
                 element: <PrivateRoute><AddServices></AddServices></PrivateRoute>
+            },
+            {
+                path: '/updatemodal/:id',
+                loader: async ({ params }) => fetch(`https://star-furniture-server.vercel.app/services/${params.id}`),
+                element: <PrivateRoute><UpdateModal></UpdateModal></PrivateRoute>
             },
             {
                 path: '/info',

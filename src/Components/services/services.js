@@ -3,9 +3,10 @@ import Cards from '../Card/Cards';
 
 const Services = () => {
   const [services, setService] = useState([]);
+  const [modalService , setModalService] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/services')
+    fetch('https://star-furniture-server.vercel.app/services')
       .then(res => res.json())
       .then(data => setService(data));
   }, []);
@@ -23,6 +24,10 @@ const Services = () => {
           services.map(service => <Cards
             key={service._id}
             service={service}
+            setService={setService}
+            services={services}
+            modalService={modalService}
+            setModalService={setModalService}
           ></Cards>)
         }
       </div>

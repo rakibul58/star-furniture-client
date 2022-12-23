@@ -31,7 +31,7 @@ const AddServices = () => {
             description: data.description,
             price: data.price
           }
-          fetch('http://localhost:5000/services', {
+          fetch('https://star-furniture-server.vercel.app/services', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'

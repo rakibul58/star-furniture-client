@@ -14,7 +14,7 @@ const BannerItems = ({slide}) => {
                     & luxury callections</h1>
             </div>
             <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/2">
-                <p className='text-white font-semibold text-lg lg:block hidden'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                <p className='text-white font-semibold text-lg lg:block hidden mt-5'>Star furniture is considered to be the ‘game-changer’ <br /> in Bangladesh’s furniture industry. Carefully-chosen raw material, <br /> environment-friendly business practice <br /> and customer-centric approach is what made Star furniture <br />a beloved brand at home and abroad.</p>
             </div>
             <div className="absolute lg:flex flex-wrap justify-end transform -translate-y-1/2 left-24 top-2/3 hidden">
                 <Link to='/services'><button className="btn btn-error hover:bg-transparent mr-2 px-6">Services</button></Link>
