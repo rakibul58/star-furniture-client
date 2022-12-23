@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import './Cards.css';
 
-function Cards({ services, service, setService}) {
+function Cards({ services, service, setService }) {
   const { user } = useContext(AuthContext);
 
   const handleDelete = id => {
     console.log(id);
-    fetch(`http://localhost:5000/services/${id}`, {
+    fetch(`https://star-furniture-server.vercel.app/services/${id}`, {
       method: 'DELETE',
     })
       .then(res => res.json())
@@ -28,7 +28,7 @@ function Cards({ services, service, setService}) {
           <figure><img className='Card-design rounded-lg' src={service.image} alt="Shoes" /></figure>
           <h2 className="card-title text-3xl text-primary mt-3">{service.title}</h2>
           <h4 className="card-title">Price: <span className='font-bold text-yellow-500'>${service.price}</span></h4>
-          <p>{service.description.length>50 ? service.description.slice(0,50)+'...' : service.description}</p>
+          <p>{service.description.length > 50 ? service.description.slice(0, 50) + '...' : service.description}</p>
           {
             user &&
             <div className="card-actions justify-end">

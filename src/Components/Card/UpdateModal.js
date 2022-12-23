@@ -26,7 +26,7 @@ const UpdateModal = () => {
         }
 
 
-        fetch(`http://localhost:5000/services/${modalService._id}`, {
+        fetch(`https://star-furniture-server.vercel.app/services/${modalService._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

@@ -48,7 +48,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/updatemodal/:id',
-                loader: async ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+                loader: async ({ params }) => fetch(`https://star-furniture-server.vercel.app/services/${params.id}`),
                 element: <PrivateRoute><UpdateModal></UpdateModal></PrivateRoute>
             },
             {
