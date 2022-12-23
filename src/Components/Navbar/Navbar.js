@@ -1,18 +1,40 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-const navItems = <>
-<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/'>Home</NavLink></li>
-<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/contact'>Contact</NavLink></li>
-<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/banner'>Banner</NavLink></li>
-<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/login'>Login</NavLink></li>
-<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/services'>Services</NavLink></li>
-<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/addservices'>Add Services</NavLink></li>
-<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/info'>Info</NavLink></li>
-<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/faq'>FAQ</NavLink></li>
-</>
+import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+
 
 
 const Navbar = () => {
+
+	const { user, logOut } = useContext(AuthContext);
+
+	const handleLogout = () => {
+		logOut()
+			.then(result => { })
+			.catch(error => console.error(error));
+	}
+
+	const navItems = <>
+		<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/'>Home</NavLink></li>
+		<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/contact'>Contact</NavLink></li>
+		<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/banner'>Banner</NavLink></li>
+		<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/info'>Info</NavLink></li>
+		<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/faq'>FAQ</NavLink></li>
+		<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/services'>Services</NavLink></li>
+
+		{
+			user ?
+				<>
+					<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/addservices'>Add Services</NavLink></li>
+					<li><button onClick={handleLogout} className='btn btn-primary rounded-full'>Logout</button></li>
+				</>
+				:
+				<>
+					<li><NavLink className={({ isActive }) => (isActive ? 'text-secondary' : '')} to='/login'>Login</NavLink></li>
+				</>
+		}
+	</>
+
 	return (
 		<div className="navbar">
 			<div className="navbar-start">
@@ -31,7 +53,7 @@ const Navbar = () => {
 					{navItems}
 				</ul>
 			</div>
-			
+
 		</div>
 	);
 };
