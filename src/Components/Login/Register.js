@@ -3,10 +3,11 @@ import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import img from '../../images/login.jpg';
+import { FaGoogle } from 'react-icons/fa'
 
 const Register = () => {
 
-  const { createUser } = useContext(AuthContext);
+  const { createUser, googleLogin } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleEmailRegister = event => {
@@ -33,6 +34,17 @@ const Register = () => {
 
   }
 
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then(result => {
+        const user = result.user;
+        console.log(user);
+        toast.success("Registered Successfully");
+        navigate('/');
+      })
+      .catch(error => console.error(error));
+  }
+
   return (
     <div className='px-10'>
       <div className='my-32 flex flex-wrap justify-center gap-10'>
@@ -53,7 +65,7 @@ const Register = () => {
               </div>
               <p>Already have an account? Please <Link className='link link-secondary' to='/login'>Login</Link></p>
               <div className='divider'>Or</div>
-              <button className='btn bg-blue-500 text-white'>Login With Google</button>
+              <button onClick={handleGoogleLogin} className='btn bg-blue-500 text-white'><FaGoogle className='mr-2'></FaGoogle> Login With Google</button>
             </div>
           </form>
         </div>
