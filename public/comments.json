@@ -1,0 +1,38 @@
+[
+    {
+        "product_name": "",
+        "comment_date": "",
+        "likes": "number",
+        "comment": "number",
+        "picture": "",
+        "description": "",
+        "author": {
+            "name": "",
+            "img": ""
+        }
+    },
+    {
+        "product_name": "",
+        "comment_date": "",
+        "likes": "",
+        "comment": "",
+        "description": "",
+        "picture": "",
+        "author": {
+            "name": "",
+            "img": ""
+        }
+    },
+    {
+        "product_name": "",
+        "comment_date": "",
+        "likes": "",
+        "comment": "",
+        "description": "",
+        "picture": "",
+        "author": {
+            "name": "",
+            "img": ""
+        }
+    }
+]
