@@ -1,38 +1,38 @@
 [
     {
-        "product_name": "",
-        "comment_date": "",
-        "likes": "number",
-        "comment": "number",
-        "picture": "",
-        "description": "",
+        "product_name": "Red Sofa",
+        "comment_date": "15/10/2017",
+        "likes": "45",
+        "comment": "100",
+        "picture": "https://i.ibb.co/FWTp19z/Best-Furniture-Hatil-0-0.jpg",
+        "description": "Very good sofa. Nice color. Very Comfort",
         "author": {
-            "name": "",
-            "img": ""
+            "name": "Rizve",
+            "img": "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1966&q=80"
         }
     },
     {
-        "product_name": "",
-        "comment_date": "",
-        "likes": "",
-        "comment": "",
-        "description": "",
-        "picture": "",
+        "product_name": "Green Sofa",
+        "comment_date": "25/12/2016",
+        "likes": "50",
+        "comment": "87",
+        "description": "Very nice and comfortable",
+        "picture": "https://i.ibb.co/FKrD6fF/download-3.jpg",
         "author": {
-            "name": "",
-            "img": ""
+            "name": "Rakib",
+            "img": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
         }
     },
     {
-        "product_name": "",
-        "comment_date": "",
-        "likes": "",
-        "comment": "",
-        "description": "",
-        "picture": "",
+        "product_name": "Dining Table",
+        "comment_date": "25/12/2017",
+        "likes": "50",
+        "comment": "145",
+        "description": "Very nice and comfortable",
+        "picture": "https://i.ibb.co/BVD50YX/TDDA004-WDBK023-600x600.jpg",
         "author": {
-            "name": "",
-            "img": ""
+            "name": "Jumman",
+            "img": "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
         }
     }
 ]
